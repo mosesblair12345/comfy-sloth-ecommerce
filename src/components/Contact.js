@@ -53,7 +53,7 @@ const Wrapper = styled.section`
   .form-input,
   .submit-btn {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border: 2px solid var(--clr-black);
   }
   .form-input {

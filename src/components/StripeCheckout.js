@@ -49,7 +49,7 @@ const CheckoutForm = () => {
         color: "#32325d",
         fontFamily: "Arial, sans-serif",
         fontSmoothing: "antialiased",
-        fontSize: "16px",
+        fontSize: "14px",
         "::placeholder": {
           color: "#32325d",
         },
@@ -98,7 +98,7 @@ const CheckoutForm = () => {
       ) : (
         <article>
           <h4>Hello, {myUser && myUser.name}</h4>
-          <p>Your total is {formatPrice(total_amount)}</p>
+          <p>Your total is {formatPrice(total_amount + shipping_fee)}</p>
           <p>Test Card Number: 4000 0025 0000 3155</p>
         </article>
       )}
@@ -140,13 +140,13 @@ const StripeCheckout = () => {
 
 const Wrapper = styled.section`
   form {
-    width: 30vw;
+    width: 37vw;
     align-self: center;
     box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
       0px 2px 5px 0px rgba(50, 50, 93, 0.1),
       0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
     border-radius: 7px;
-    padding: 40px;
+    padding: 3px;
   }
   input {
     border-radius: 6px;
@@ -180,7 +180,7 @@ const Wrapper = styled.section`
   }
   #card-element {
     border-radius: 4px 4px 0 0;
-    padding: 12px;
+    padding: 14px;
     border: 1px solid rgba(50, 50, 93, 0.1);
     max-height: 44px;
     width: 100%;

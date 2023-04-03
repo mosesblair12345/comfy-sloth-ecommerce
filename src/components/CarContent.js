@@ -53,5 +53,10 @@ const Wrapper = styled.section`
   .clear-btn {
     background: var(--clr-black);
   }
+  @media screen and (max-width: 360px) {
+    .link-btn {
+      font-size: 0.6rem;
+    }
+  }
 `;
 export default CartContent;
