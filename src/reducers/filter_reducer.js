@@ -59,9 +59,7 @@ const filter_reducer = (state, action) => {
       }
       return { ...state, filtered_products: tempProducts };
     case UPDATE_FILTERS:
-      console.log("i am being updated");
       const { name, value } = action.payload;
-      console.log(value);
       return { ...state, filters: { ...state.filters, [name]: value } };
     case CLEAR_FILTERS:
       return {
